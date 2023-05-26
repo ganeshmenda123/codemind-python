@@ -9,3 +9,5 @@ if l:
     print(min(l))
 else:
     print(-1)
+        
+        
