@@ -1,10 +1,12 @@
-l=input().lower().split()
-s=''.join(l)
-c=[]
-for i in s:
-    if s.count(i)==1:
-        c.append(i)
-c.sort()
-for i in c:
-    print(i,end="")
-        
+n=input().lower()
+k=list(n)
+l=[]
+for i in k:
+    if i!=" ":
+        l.append(i)
+k=list(set(l))
+k.sort()
+#print(*l)
+#for i in range(len(l)):
+for i in range(len(k)):
+    print(k[i],end="")
