@@ -1,15 +1,11 @@
-import math as m
-def primes(n):
-    if n<2:
-        return False
-    for i in range(2,int(m.sqrt(n))+1):
+from math import sqrt
+def p(n):
+    for i in range(2,int(sqrt(n))+1):
         if n%i==0:
             return False
     return True
-a=int(input())
-b=int(input())
-x=0
-for s in range(a,b+1):
-    if primes(s):
-        x=x+1
-print(x)
+c=0
+for i in range(int(input()),int(input())+1):
+    if p(i) and i!=1:
+        c+=1
+print(c)
