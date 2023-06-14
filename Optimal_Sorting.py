@@ -10,3 +10,4 @@ for i in range(n):
         print("0")
     else:
         print(max(l)-min(l))
+        
